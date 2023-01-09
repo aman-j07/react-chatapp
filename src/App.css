@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.chat  {
+    max-height: 80vh;
+}
+
+.userpic  {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.shrttxt  {
+  font-size: 14px;
+}
+
+.vshrttxt  {
+    font-size: 11px;
+}
+
+.msgcover  {
+    min-width: 100px;
+}
+
+.msgcover--sent  {
+  border-radius:10px 0px 10px 10px;
+}
+
+.msgcover--received  {
+  border-radius: 0px 10px 10px 10px ;
+}
