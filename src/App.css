@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  border: 1px solid #918787;
 }
 
 .chat  {

@@ -42,7 +42,7 @@ function Chat(props: Iprops) {
   useEffect(()=>{
     if (refChat.current !== null) 
     refChat.current.scrollTop = refChat.current.scrollHeight;
-  })
+  },[messages])
 
   return (
     <>
@@ -66,7 +66,7 @@ function Chat(props: Iprops) {
           placeholder="Enter message"
         />
         <button
-          className="btn btn-primary"
+          className="btn btn-secondary"
           onClick={(e) => {
             e.preventDefault();
             sendMessage();
