@@ -35,7 +35,6 @@ function App() {
     signInWithPopup(auth, provider).then((result) => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       if (credential !== null) {
-        const token = credential.accessToken;
         setUser(result.user);
       }
     });
@@ -46,8 +45,6 @@ function App() {
       setUser(null);
     });
   };
-
-  console.log("user - ", user);
 
   return (
     <div className="App container d-flex flex-column p-2">
